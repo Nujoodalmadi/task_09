@@ -29,9 +29,10 @@ urlpatterns = [
     path('restaurants/update/<int:restaurant_id>/',views.restaurant_update ,name='restaurant-update'),
     path('restaurants/delete/<int:restaurant_id>/',views.restaurant_delete ,name='restaurant-delete'),
 
-    path('signup/',views.signup ,name='signup'),
-    path('signin/',views.signin ,name='signin'),
-    path('signout/',views.signout ,name='signout'),
+     path('signup/',views.user_register ,name='signup'),
+    path('signin/',views.user_login ,name='signin'),
+    path('signout/',views.logout_view ,name='signout'),
+    
 ]
 
 if settings.DEBUG:
